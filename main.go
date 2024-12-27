@@ -8,7 +8,7 @@ import (
 
 func main() {
 	str := "Hello"
-	enc := rot13.Encrypt(str)
-	dec := rot13.Decrypt(enc)
+	enc := rot13.Rot13(str)
+	dec := rot13.Rot13(enc)
 	fmt.Println("str == dec ?", str == dec)
 }
