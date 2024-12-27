@@ -1,5 +1,4 @@
-// A simple letter substitution cipher, commonly called ROT13
-// It works by shifting any of the 26 alphabets by 13 characters, such that ABC -> NOP and vice versa. Same algorithm provides encoding and decoding
+// A simple letter substitution cipher, commonly called ROT13. It works by shifting any of the 26 alphabets by 13 characters, such that ABC -> NOP and vice versa. Same algorithm provides encoding and decoding.
 package rot13
 
 // Accepts an input string to encode/decode, Returns processed string
