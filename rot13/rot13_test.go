@@ -9,9 +9,9 @@ import (
 // Uses a very common string (with whitespace) with each alphabet to check for encoding/decoding
 func TestRot13(t *testing.T) {
 	str := "the quick brown fox jumps over the lazy dog"
-	ans := "gurdhvpxoebjasbkwhzcfbiregurynmlqbt"
-	enc := Rot13(str)
-	dec := Rot13(enc)
+	ans := "gur dhvpx oebja sbk whzcf bire gur ynml qbt"
+	enc := Encode(str)
+	dec := Decode(enc)
 	fmt.Println("enc == ans && dec == str ?", enc == ans && dec == str)
 
 	if enc != ans || dec != str {
