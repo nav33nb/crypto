@@ -1,19 +1,19 @@
 package rot13
 
 func Encrypt(text string) string {
-	var factor rune
+	var floor rune
 	var enc string
 	for _, ch := range text {
 		switch {
-		case 97 <= ch && ch <= 122:
-			factor = 97
-		case 65 <= ch && ch <= 90:
-			factor = 65
+		case 'a' <= ch && ch <= 'z':
+			floor = 'a'
+		case 'A' <= ch && ch <= 'Z':
+			floor = 'A'
 		default:
 			enc += string(ch)
 			continue
 		}
-		ch = (((ch - factor) + 13) % 26) + factor
+		ch = (((ch - floor) + 13) % 26) + floor
 		enc += string(ch)
 	}
 	return enc
