@@ -12,7 +12,7 @@ func TestRot13(t *testing.T) {
 	ans := "gur dhvpx oebja sbk whzcf bire gur ynml qbt"
 	enc := Encode(str)
 	dec := Decode(enc)
-	fmt.Println("enc == ans && dec == str ?", enc == ans && dec == str)
+	fmt.Println("(encrypt == target) && (decrypt == input) ?", enc == ans && dec == str)
 
 	if enc != ans || dec != str {
 		t.Errorf("\nEncrypt(%q) = %q; want %q\nDecrypt(%q) = %q; want %q", str, enc, ans, enc, str, dec)
