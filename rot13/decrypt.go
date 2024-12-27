@@ -1,20 +1,20 @@
 package rot13
 
 func Decrypt(text string) string {
-	var factor rune
-	var enc string
+	var floor rune
+	var dec string
 	for _, ch := range text {
 		switch {
-		case 97 <= ch && ch <= 122:
-			factor = 97
-		case 65 <= ch && ch <= 90:
-			factor = 65
+		case 'a' <= ch && ch <= 'z':
+			floor = 'a'
+		case 'A' <= ch && ch <= 'Z':
+			floor = 'A'
 		default:
-			enc += string(ch)
+			dec += string(ch)
 			continue
 		}
-		ch = (((ch - factor) + 13) % 26) + factor
-		enc += string(ch)
+		ch = (((ch - floor) + 13) % 26) + floor
+		dec += string(ch)
 	}
-	return enc
+	return dec
 }
