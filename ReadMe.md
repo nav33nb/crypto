@@ -8,8 +8,10 @@ go mod init # if not done already
 go get github.com/nav33nb/crypto
 ```
 
+Link - [https://pkg.go.dev/github.com/nav33nb/ncrypt](https://pkg.go.dev/github.com/nav33nb/ncrypt)
+
 ## Usage
-```
+```go
 package main
 
 import (
