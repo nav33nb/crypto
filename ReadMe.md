@@ -5,7 +5,7 @@ A simple module i created in go to play with publishing, exports and versioning 
 > In the highly unlikely (not recommended) case you want to use this for your production grade applications
 ```sh
 go mod init # if not done already
-go get github.com/nav33nb/crypto
+go get github.com/nav33nb/ncrypt
 ```
 
 Link - [https://pkg.go.dev/github.com/nav33nb/ncrypt](https://pkg.go.dev/github.com/nav33nb/ncrypt)
